@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="fr.bamlab.native-routing"
+        version="0.2.0">
+
+  <name>routingPlugin</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/routingPlugin.js" target="js/routingPlugin.js"/>
+
+  <js-module src="www/routingPlugin.js" name="routingPlugin">
+    <clobbers target="cordova.plugins.bamRouting" />
+  </js-module>
+
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="BAMRouting">
+        <param name="ios-package" value="BAMRouting" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/BAMRouting.h" target-dir="RoutingPlugin"/>
+    <source-file src="src/ios/BAMRouting.m" target-dir="RoutingPlugin"/>
+  </platform>
+
+
+</plugin>
