@@ -1,4 +1,4 @@
-#import "Routing.h"
+#import "BAMRouting.h"
 
 @implementation BAMRouting
 
@@ -14,7 +14,7 @@
                                messageAsString:msg];
 
     NSString *valueToSave = withData;
-    [[NSUserDefaults standardUserDefaults] setObject:withData forKey:@"specialEdition"];
+    [[NSUserDefaults standardUserDefaults] setObject:withData forKey:@"cordovaMessage"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 
 
