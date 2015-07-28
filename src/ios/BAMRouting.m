@@ -11,7 +11,7 @@
 
     CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
-                               messageAsString:msg];
+                               ];
 
     NSString *valueToSave = withData;
     [[NSUserDefaults standardUserDefaults] setObject:withData forKey:@"cordovaMessage"];

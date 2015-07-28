@@ -15,5 +15,5 @@ cordova plugin add https://github.com/bamlab/cordova-plugin-native-routing
 Call in your application
 
 ```
-cordova.plugins.bamRouting.go(segueName, dataForSegue);
+cordova.plugins.nativeRouting.go(segueName, dataForSegue);
 ```

@@ -12,7 +12,7 @@
   <asset src="www/routingPlugin.js" target="js/routingPlugin.js"/>
 
   <js-module src="www/routingPlugin.js" name="routingPlugin">
-    <clobbers target="cordova.plugins.bamRouting" />
+    <clobbers target="cordova.plugins.nativeRouting" />
   </js-module>
 
 
