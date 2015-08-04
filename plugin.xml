@@ -15,6 +15,16 @@
     <clobbers target="cordova.plugins.nativeRouting" />
   </js-module>
 
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="BAMRouting">
+        <param name="android-package" value="fr.bamlab.routing.BAMRouting"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/BAMRouting.java" target-dir="src/fr/bamlab/routing/"/>
+  </platform>
 
   <platform name="ios">
 
